@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Gestão</title>
+    <link rel="stylesheet" href="./style/style-global.css">
+</head>
+<body>
+
+
+    <!-- Sistema de login (Aparecer primeiro)-->
+
+    <section id="tela-autenticacao">
+    
+    <!-- Tela de Login-->
+
+        <div id="form-login" class="auth-card">
+
+            <h2>Entrar</h2>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <button onclick="logar()">Entrar</button>
+            <span class="toggle-link" onclick="alterarForms()">Cadastrar</span>
+
+        </div>
+
+        <div id="form-registrar" class="auth-card">
+
+        <!-- Campo de Registro-->
+
+            <h2>Criar Conta</h2>
+            <input type="text" placeholder="Nome Completo">
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Criar Senha">
+            <button onclick="logar()">Cadastrar e Entrar</button>
+            <span class="toggle-link" onclick="alterarForms()">Já Possui Conta? Faça Login</span>
+
+
+        </div>
+
+    </section>
+
+
+    <!--Cabecalho da navbar para navegar no menu-->
+
+    <header class="cabecalho">
+
+        <nav class="navegacao_cabecalho"></nav>
+        
+        <ul class="gestao">
+            <li><a href="#Celulas">Células</a></li>
+            <li><a href="#Membros">Membros</a></li>
+            <li><a href="#Cursos">Cursos</a></li>
+            <li><a href="#Eventos">Eventos</a></li>
+            <li><a href="#Seara">Seara</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+        </ul>
+
+    </header>
+
+
+<!--Pagina principal/ Seção de Conteudo-->
+
+    <main class="home">
+
+        <section id="Celulas" class="content-section">
+
+            <h1>Gestão de Celulas</h1>
+            <p>Aqui você gerencia o cadastro de Celulas e seus Lideres</p>
+
+        </section>
+        
+        <section id="Membros" class="content-section">
+
+            <h1>Gestão de Mémbros</h1>
+            <p>Aqui você gerencia o cadastro de membros</p>
+
+        </section>
+
+        <section id="Cursos" class="content-section">
+
+            <h1>Gestão de Cursos</h1>
+            <p>Aqui você gerencia os cursos disponiveis para os membros da Igreja.</p>
+
+        </section>
+
+
+        <section id="Eventos" class="content-section">
+
+            <h1>Gestão de Eventos</h1>
+            <p>Aqui você gerencia os eventos que irá acontecer na igreja.</p>
+
+        </section>
+
+        <section id="Seara" class="content-section">
+
+             <h1>Gestão de Seara</h1>
+            <p>Aqui você gerencia as vagas onde mais necessita de membros para ajudar a manter a obra na Igreja.</p>
+        
+        </section>
+
+        <section id="Sobre" class="content-section">
+
+            <h1>Informações sobre a Igreja</h1>
+            <p>Aqui você coloca as Informações sobre a Igreja.</p>
+
+        </section>
+       
+    </main>
+
+    <footer class="rodape">
+
+        &copy;
+        
+    </footer>
+
+</body>
+</html>
