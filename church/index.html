@@ -68,7 +68,33 @@
         <section id="Celulas" class="content-section">
 
             <h1>Gestão de Celulas</h1>
-            <p>Aqui você gerencia o cadastro de Celulas e seus Lideres</p>
+            <p>Aqui você gerencia o cadastro de Celulas e seus Líderes</p>
+
+            <div class="celulas-form">
+                <h2>Registrar nova célula</h2>
+                <input type="text" id="celula-nome" placeholder="Nome da célula" />
+                <input type="text" id="celula-lider" placeholder="Nome do líder" />
+                <input type="text" id="celula-dia" placeholder="Dia da semana" />
+                <input type="text" id="celula-horario" placeholder="Horário" />
+                <button onclick="gravarCelula()">Salvar célula</button>
+            </div>
+
+            <div class="celulas-lista">
+                <h2>Células cadastradas</h2>
+                <p id="celulas-count">0 células cadastradas</p>
+                <table id="celulas-tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Líder</th>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="celulas-corpo"></tbody>
+                </table>
+            </div>
 
         </section>
         
@@ -118,6 +144,7 @@
 
     </div>
 
+    <script src="./json/script-global.js"></script>
 
 </body>
 </html>
